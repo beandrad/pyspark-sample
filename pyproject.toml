@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pyspark-sample"
+version = "0.1.0"
+description = ""
+authors = ["Isabel Andrade <beandrad@microsoft.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyspark = "*"
+
+[tool.poetry.dev-dependencies]
+jupyter = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
