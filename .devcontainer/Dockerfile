@@ -38,7 +38,7 @@ RUN mkdir -p /tmp/docker-downloads \
     && apt-get -y install openjdk-8-jdk-headless wget \
     && wget https://downloads.apache.org/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop3.2.tgz -O /tmp/docker-downloads/spark-${SPARK_VERSION}-bin-hadoop3.2.tgz \
     && tar -xvzf /tmp/docker-downloads/spark-${SPARK_VERSION}-bin-hadoop3.2.tgz \
-    && mv spark-${SPARK_VERSION}-bin-hadoop3.2 spark \
+    && mv spark-${SPARK_VERSION}-bin-hadoop3.2 /root/spark \
     && rm -rf /tmp/docker-downloads
 ENV SPARK_HOME=/root/spark
 ENV PATH=$PATH:$SPARK_HOME/bin
